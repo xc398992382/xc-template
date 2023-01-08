@@ -1,4 +1,4 @@
-package com.juzhun.template.controller.query;
+package com.xc.template.controller.query;
 
 
 import lombok.Data;

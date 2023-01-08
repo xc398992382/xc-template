@@ -1,4 +1,4 @@
-package com.juzhun.template.utils.copy;
+package com.xc.template.utils.copy;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.util.CollectionUtils;

@@ -1,13 +1,13 @@
-package com.juzhun.template.controller;
+package com.xc.template.controller;
 
 import cn.hutool.core.collection.CollectionUtil;
 import com.github.pagehelper.PageInfo;
-import com.juzhun.template.controller.query.UserPageQuery;
-import com.juzhun.template.controller.query.UserQuery;
-import com.juzhun.template.domain.bo.UserBO;
-import com.juzhun.template.domain.vo.UserVO;
-import com.juzhun.template.service.UserService;
-import com.juzhun.template.utils.copy.BeanUtilCopy;
+import com.xc.template.controller.query.UserPageQuery;
+import com.xc.template.controller.query.UserQuery;
+import com.xc.template.domain.bo.UserBO;
+import com.xc.template.domain.vo.UserVO;
+import com.xc.template.service.UserService;
+import com.xc.template.utils.copy.BeanUtilCopy;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

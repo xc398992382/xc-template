@@ -1,4 +1,4 @@
-package com.juzhun.template.config;
+package com.xc.template.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringBootConfiguration;

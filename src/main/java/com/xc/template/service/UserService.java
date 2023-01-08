@@ -1,7 +1,7 @@
-package com.juzhun.template.service;
+package com.xc.template.service;
 
 import com.github.pagehelper.PageInfo;
-import com.juzhun.template.domain.bo.UserBO;
+import com.xc.template.domain.bo.UserBO;
 
 public interface UserService {
 

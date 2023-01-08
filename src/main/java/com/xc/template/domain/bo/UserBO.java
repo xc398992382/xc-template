@@ -1,4 +1,4 @@
-package com.juzhun.template.domain.bo;
+package com.xc.template.domain.bo;
 
 import lombok.Data;
 

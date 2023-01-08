@@ -1,8 +1,8 @@
-package com.juzhun.template.repository;
+package com.xc.template.repository;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.juzhun.template.domain.UserDO;
-import com.juzhun.template.mapper.UserMapper;
+import com.xc.template.domain.UserDO;
+import com.xc.template.mapper.UserMapper;
 import org.springframework.stereotype.Repository;
 
 /**

@@ -1,7 +1,7 @@
-package com.juzhun.template.mapper;
+package com.xc.template.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.juzhun.template.domain.UserDO;
+import com.xc.template.domain.UserDO;
 
 public interface UserMapper extends BaseMapper<UserDO>  {
 

@@ -1,4 +1,4 @@
-package com.juzhun.template.utils.copy;
+package com.xc.template.utils.copy;
 
 @FunctionalInterface
 /**

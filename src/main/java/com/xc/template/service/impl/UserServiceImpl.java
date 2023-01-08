@@ -1,12 +1,12 @@
-package com.juzhun.template.service.impl;
+package com.xc.template.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.juzhun.template.domain.UserDO;
-import com.juzhun.template.domain.bo.UserBO;
-import com.juzhun.template.repository.UserRepository;
-import com.juzhun.template.service.UserService;
-import com.juzhun.template.utils.copy.PageInfoUtil;
+import com.xc.template.domain.UserDO;
+import com.xc.template.domain.bo.UserBO;
+import com.xc.template.repository.UserRepository;
+import com.xc.template.service.UserService;
+import com.xc.template.utils.copy.PageInfoUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.juzhun.template.domain;
+package com.xc.template.domain;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;

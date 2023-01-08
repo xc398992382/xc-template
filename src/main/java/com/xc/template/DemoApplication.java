@@ -1,4 +1,4 @@
-package com.juzhun.template;
+package com.xc.template;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -9,8 +9,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
 @EnableTransactionManagement
-@MapperScan("com.juzhun.template.mapper")
-@SpringBootApplication(scanBasePackages = {"com.juzhun.template"}, exclude = {DataSourceAutoConfiguration.class})
+@MapperScan("com.xc.template.mapper")
+@SpringBootApplication(scanBasePackages = {"com.xc.template"}, exclude = {DataSourceAutoConfiguration.class})
 public class DemoApplication {
 
 	public static void main(String[] args) {
