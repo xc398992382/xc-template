@@ -1,0 +1,32 @@
+package ${package.Entity};
+
+import java.util.Date;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+
+/**
+ *  ${table.comment}
+ * @author ${author}
+ * @date ${date}
+ */
+@TableName("${table.name}")
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class ${table.entityName} {
+
+    #foreach($field in ${table.fields})
+    /**
+     * ${field.comment}
+     * 字段 ${field.name} 类型 ${field.type}
+     */
+    private ${field.propertyType}  ${field.propertyName};
+
+    #end
+
+}

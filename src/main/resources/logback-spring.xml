@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+
+    <!-- 获取yml中获取参数 -->
+    <springProperty scope="context" name="logName" source="spring.application.name" defaultValue="template"/>
+    <property name="logName" value="${logName}" />
+    <property name="logPath" value="./logs/${logName}" />
+    <property name="logType" value="application" />
+    <contextName>${logName}</contextName>
+
+    <!-- 日志格式  -->
+    <property name="CONSOLE_LOG_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%contextName] [${logType}] [%thread]  %logger{50} -[%method : %line]- %msg%n"/>
+
+    <!--输出到控制台-->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <!--%d{yyyy-MM-dd HH:mm:ss} %contextName [%thread] %-5level %logger{100} - %msg %n-->
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!--输出到文件-->
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logPath}.log</file>
+        <!--日志文件最大的大小-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${logPath}-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <MaxFileSize>50MB</MaxFileSize>
+            <totalSizeCap>1GB</totalSizeCap>
+            <maxHistory>15</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+
+    <!-- 日志输出级别 -->
+    <root level="info" additivity="false">
+        <appender-ref ref="console" />
+        <appender-ref ref="file" />
+    </root>
+
+</configuration>
